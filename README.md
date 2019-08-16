@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/devlimee/discord.js-bot/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/klmnblzs/discord.js-.py-selfbot)
 <center><h1>discord.js-.py-selfbot</h1> 
 <p>www.github.com/devshazy</p>
 <p>https://github.com/klmnblzs</p></center>
