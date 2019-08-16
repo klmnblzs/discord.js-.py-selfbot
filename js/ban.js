@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   if (!mentionedMember) return message.channel.send(`:x: Mention a valid member.`);
   if (!mentionedMember.bannable) return message.channel.send(`:x: You don't have permission to ban the mentioned member.`);
   await mentionedMember.ban(banReason).catch(error => console.log(`Error.`));
-  message.channel.send(`:white_check_mark: ${mentionedMember} has been **banned** from the server, by: **${message.author}**. Reason: **${banReason}**`);
+  message.channel.send(`:white_check_mark: ${mentionedMember} has been **banned** from the server, by **${message.author}**. Reason: **${banReason}**`);
 };
 
 module.exports.help = {
