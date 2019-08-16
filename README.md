@@ -4,7 +4,7 @@
 
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/klmnblzs/discord.js-.py-selfbot)
 <center><h1>discord.js-.py-selfbot</h1> 
-<p>www.github.com/devshazy</p>
+<p>www.github.com/devlimee</p>
 <p>www.github.com/klmnblzs</p></center>
 
 <h1>Short description:</h1>
