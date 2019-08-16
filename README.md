@@ -8,7 +8,8 @@
 <p>www.github.com/klmnblzs</p></center>
 
 <h1>Short description:</h1>
-<p>An example of a Self bot. (js, py) (Continuous development under - The GitHub repository is constantly updated if there is a new development)</p>
+<p>An example of a Self bot. (js, py)</p>
+<p>Continuous development under - The GitHub repository is constantly updated if there is a new development</p>
 
 </body>
 </html>
