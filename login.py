@@ -40,4 +40,6 @@ async def on_ready():
 	print(client.guilds)
 	print('I am ready to serve, commander!')
 
+bot.load_extension("cogs.moderation")
+	
 client.run(TOKEN_AUTH, bot=False)
