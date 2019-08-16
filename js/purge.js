@@ -1,5 +1,6 @@
-module.exports.run = async (client, message, args) => {
-	
+const Discord = require('discord.js');
+
+exports.run = async (client, message, args) => {
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(`:x: You don't have permission for that.`)
     if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.channel.send(`:x: Error, i don't have **MANAGE_MESSAGES** permission!`);
 
