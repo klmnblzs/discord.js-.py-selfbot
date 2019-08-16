@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   if (!mentionedMember) return message.channel.send(`:x: Mention a valid member.`);
   if (!mentionedMember.kickable) return message.channel.send(`:x: You don't have permission to kick the mentioned member.`);
   await mentionedMember.kick(kickReason).catch(error => console.log(`Error.`));
-  message.channel.send(`:white_check_mark: ${mentionedMember} has been **kicked** from the server, by: **${message.author}**. Reason: **${kickReason}**`);
+  message.channel.send(`:white_check_mark: ${mentionedMember} has been **kicked** from the server, by **${message.author}**. Reason: **${kickReason}**`);
 };
 
 module.exports.help = {
