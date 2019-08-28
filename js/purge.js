@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     }).catch().catch((e) => message.channel.send(`:x: You cannot delete a message older than 14 days.`));
 };
 
-module.exports.help = {
+exports.help = {
     name: "purge",
     category: "moderation",
     description: "clears the specified amount"
