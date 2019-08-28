@@ -2,7 +2,6 @@ let Discord = require('discord.js'), client = new Discord.Client(), config = ('.
 
 client.on('ready', () => {
   console.log(`${client.user.tag} logged! Guilds: ${client.guilds.size}`);
-  client.user.setPresence({ game: { name: `👀 py-js-selfbot`, type: 'WATCHING' }, status: 'online' });
 });
 
 //Command handler
