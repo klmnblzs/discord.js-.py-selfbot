@@ -10,8 +10,8 @@ exports.run = async (client, message, args) => {
   message.channel.send(`:white_check_mark: ${mentionedMember} has been **kicked** from the server, by **${message.author}**. Reason: **${kickReason}**`);
 };
 
-module.exports.help = {
+exports.help = {
     name: "kick",
     category: "moderation",
     description: "kick the mentioned member from the server"
-}	
+}
