@@ -40,7 +40,7 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
     embed.setColor(0xa12a2a);
     embed.setTimestamp();
     embed.addField(`Before`, oldMessage.content, true);
-	embed.addField(`After`, newMessage.content, true);
+    embed.addField(`After`, newMessage.content, true);
    return client.guilds.get('GuildID').channels.get('ChannelID').send(embed)
 }});
 
