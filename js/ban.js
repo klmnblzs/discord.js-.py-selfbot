@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
   message.channel.send(`:white_check_mark: ${mentionedMember} has been **banned** from the server, by **${message.author}**. Reason: **${banReason}**`);
 };
 
-module.exports.help = {
+exports.help = {
     name: "ban",
     category: "moderation",
     description: "ban the mentioned member from the server"
