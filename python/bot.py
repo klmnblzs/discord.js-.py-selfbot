@@ -9,19 +9,19 @@ import git
 import os
 import io
 
-TOKEN_AUTH = "NTM5MDYwMDg5MTE0NTkxMjQy.XWGU5w.cw6Bckvpb-4D32mUiVPCL85UeQU"
+TOKEN_AUTH = "YOUR AUTHENTICATION CODE"
 client = discord.Client()
-bot = commands.Bot(command_prefix='sb.', description='''Dempy\'s selfbot.''', self_bot=True)
+bot = commands.Bot(command_prefix='YOUR PREFIX', description='''SELFBOT MADE BY DEMPY''', self_bot=True)
 
 @bot.event
 async def on_ready():
-	print('Bot is running. I am listening to your commands, commander!')
+	print('Bot is running!')
 
 @bot.event
 async def on_message_delete(message):
 	if message.channel.type == discord.ChannelType.private:
 		msgtime = message.created_at.now()
-		channel = bot.get_channel(616295589012963349)
+		channel = bot.get_channel(YOUR CHANNEL) #without ''
 		embed = discord.Embed(title='Delete log', color=0xa12a2a)
 		embed.add_field(name='{} Deleted a message:'.format(message.author), value=message.content)
 		embed.set_footer(text=msgtime)
@@ -31,7 +31,7 @@ async def on_message_delete(message):
 async def on_message_edit(message, after):
 	if message.channel.type == discord.ChannelType.private:
 		msgtime = message.created_at.now()
-		channel = bot.get_channel(616295589012963349)
+		channel = bot.get_channel(YOUR CHANNEL) #without ''
 		embed = discord.Embed(title='Edit log; sent by {}'.format(message.author), color=0xa12a2a)
 		embed.add_field(name='Before:', value=message.content)
 		embed.add_field(name='After:', value=after.content)
