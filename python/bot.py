@@ -9,9 +9,9 @@ import git
 import os
 import io
 
-TOKEN_AUTH = "YOUR AUTHENTICATION CODE"
+TOKEN_AUTH = "NTM5MDYwMDg5MTE0NTkxMjQy.XWGU5w.cw6Bckvpb-4D32mUiVPCL85UeQU"
 client = discord.Client()
-bot = commands.Bot(command_prefix='YOUR PREFIX', description='''A SELFBOT CREATED BY DEMPY''', self_bot=True)
+bot = commands.Bot(command_prefix='sb.', description='''Dempy\'s selfbot.''', self_bot=True)
 
 @bot.event
 async def on_ready():
@@ -20,18 +20,22 @@ async def on_ready():
 @bot.event
 async def on_message_delete(message):
 	if message.channel.type == discord.ChannelType.private:
-		channel = bot.get_channel(<LOGCHANNEL ID>)
+		msgtime = message.created_at.now()
+		channel = bot.get_channel(616295589012963349)
 		embed = discord.Embed(title='Delete log', color=0xa12a2a)
-		embed.add_field(name='{} deleted a message:'.format(message.author), value=message.content)
+		embed.add_field(name='{} Deleted a message:'.format(message.author), value=message.content)
+		embed.set_footer(text=msgtime)
 		await channel.send(embed=embed)
 
 @bot.event
 async def on_message_edit(message, after):
 	if message.channel.type == discord.ChannelType.private:
-		channel = bot.get_channel(<LOGCHANNEL ID>)
+		msgtime = message.created_at.now()
+		channel = bot.get_channel(616295589012963349)
 		embed = discord.Embed(title='Edit log; sent by {}'.format(message.author), color=0xa12a2a)
 		embed.add_field(name='Before:', value=message.content)
 		embed.add_field(name='After:', value=after.content)
+		embed.set_footer(text=msgtime)
 		await channel.send(embed=embed)
 
 @bot.command()
@@ -58,7 +62,7 @@ async def roll(ctx):
 	await ctx.message.delete()
 	author = ctx.message.author
 	numbers = random.randint(1, 6)
-	
+
 	embed = discord.Embed(title='{} rolled! :game_die:'.format(author), color=0xa2ebe3)
 	embed.add_field(name='Roll value:', value=numbers)
 	await ctx.send(embed=embed)
